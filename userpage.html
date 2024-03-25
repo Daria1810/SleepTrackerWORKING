@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sleep Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ApexCharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/stylesh.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar">
+        <a href="home.html" class="navbar-brand">Sleep Tracker</a>
+    </nav>
+    <!-- other content -->
+
+    <div class="main-body">
+        <h1>Your personal sleep tracker</h1>
+        <h2>Hello! How did you sleep last night? </h2>
+    </div>
+
+    <form action="output.php" method="post">
+        <div class="card3">
+            <h2><b>When did you go to sleep?</b></h2>
+            <div class="form-group">
+                <input type="time" name="mytimes" id="mytimes" required>
+            </div>
+            <h2><b>When did you wake up?</b></h2>
+            <div class="form-group">
+                <input type="time" name="mytimew" id="mytimew" required>
+            </div>
+            <h2><b>How would you rate the quality of your sleep?</b></h2>
+            <div class="container">
+                <div class="rating-wrap">
+                    <h2>Star Rating</h2>
+                    <div class="center">
+                        <div class="form-group">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" class="full"
+                                    title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5" /><label for="star4.5"
+                                    class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                    class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5" /><label for="star3.5"
+                                    class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                    class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5" /><label for="star2.5"
+                                    class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                    class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5" /><label for="star1.5"
+                                    class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                    class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5" /><label for="star0.5"
+                                    class="half"></label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <h4 id="rating-value"></h4>
+                </div>
+            </div>
+            <input type="submit" class="btn" value="Submit">
+        </div>
+    </form>
+    <!-- chart -->
+    <div class="card" id="chart-time">
+        <h2>Sleep Quantity</h2>
+        <p>Weekly comparison</p>
+        <div class="pulse"></div>
+        <div class="area-chart1">
+            <div class="grid"></div>
+        </div>
+    </div>
+    
+    <div class="card" id="chart-stars">
+        <h2>Sleep Quality</h2>
+        <p>Weekly comparison</p>
+        <div class="pulse"></div>
+        <div class="area-chart2">
+            <div class="grid"></div>
+        </div>
+    </div>
+
+    <!-- JS File -->
+    <script src="js/script.js"></script>
+
+    <footer id="footer2">
+        <p>&copy; 2023 Sleep Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

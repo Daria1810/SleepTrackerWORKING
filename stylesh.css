@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:400,700&display=swap');
+
+
+
+head{
+  font-family:Fjalla One';
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1F313B;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #051923;
+  color: #D9DCD6;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-left: 10px;
+  color: #D9DCD6;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.main-body {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+
+.main-body h1 {
+  color: #79b1c2;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 80px;
+  font-weight: bolder;
+  font-family: 'Roboto Slab';
+}
+
+.main-body h2 {
+  color: #D9DCD6;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto Slab';
+}
+
+ .button {
+  color: #D9DCD6;;
+  background-color: #214E64;
+  border-radius: 15px;
+  width: auto;
+  height: 50px;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  font-family: 'Roboto Slab';
+}
+
+ .button:hover {
+  background-color: #D9DCD6;
+  color: #79b1c2;
+  border: 2px solid #79b1c2;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 100px;
+  display: flex;
+  
+}
+
+.card1, .card2 {
+  width: 30%;
+  color: #D9DCD6;
+  background-color: #051923;
+  border-radius: 30px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.card1:hover, .card2:hover {
+  background-color: #D9DCD6;
+  color: #1f313b;
+}
+
+.card1 h2, .card2 h2 {
+  font-size: 40px;
+  padding-top: 2px;
+  font-family: 'Fjalla One';
+}
+
+.card1 p, .card2 p {
+  font-size: 20px;
+  margin: 5px;
+  padding-bottom: 50px;
+  
+}
+
+.card1 {
+  margin-left: 15%;
+ 
+}
+
+.card2 {
+  margin-left: 10%;
+  
+}
+
+#footer1 {
+  width: 100%;
+  height: 80px;
+  background-color: #051923;
+  color: #D9DCD6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab';
+}
+
+
+
+
+#chart-time, #chart-stars
+{
+  margin-top: 100px;
+  width:40%;
+  margin-left: 30%;
+  height:30%;
+}
+#chart-stars
+{
+margin-bottom: 100px;
+}

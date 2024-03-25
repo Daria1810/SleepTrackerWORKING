@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styleslog.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="home.html" class="navbar-brand">Sleep Tracker</a>
+    </nav>
+    <div class="section">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center">
+                <h1>Log-in / Sign-up</h1>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                <label for="reg-log"></label>
+                <div class="card-3d-wrap">
+                    <div class="card-3d-wrapper">
+                        <div class="card-front">
+                            <div class="center-wrap">
+                                <div class="section text-center">
+                                    <h1 class="mb-4">Log In</h1>
+                                    <form action="register.php" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-style" placeholder="Username" name="usernamel" id="usernamel" required>
+                                            <i class="input-icon uil uil-user"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" class="form-style" placeholder="Password" name="passwordl" id="passwordl" required>
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <input type="submit" class="btn mt-3" value="Log In">
+                                        <p class="mb-0 mt-4 text-center"><a href="" class="link">Forgot your password?</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="center-wrap">
+                                <div class="section text-center">
+                                    <h1 class="mb-2">Sign Up</h1>
+                                    <form action="register.php" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-style" placeholder="First Name" name="first_name" id="first_name" required>
+                                            <i class="input-icon uil uil-user"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-style" placeholder="Last Name" name="last_name" id="last_name" required>
+                                            <i class="input-icon uil uil-user"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-style" placeholder="Username" name="usernames" id="usernames" required>
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" class="form-style" placeholder="Password" name="passwords" id="password" required>
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <input type="submit" class="btn mt-3" value="Sign Up">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>localStorage.clear();</script>
+</body>
+</html>

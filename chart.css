@@ -1,0 +1,313 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-family: Arial, sans-serif;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.rating-wrap{
+	max-width: 480px;
+	
+	padding: 15px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+	text-align: center;
+}
+
+.center{
+	width: 162px; 
+	
+}
+
+
+#rating-value{	
+	width: 110px;
+	margin: 40px auto 0;
+	padding: 10px 5px;
+	text-align: center;
+	box-shadow: inset 0 0 2px 1px rgba(46,204,113,.2);
+}
+
+/*styling star rating*/
+.rating{
+	border: none;
+	float: left;
+}
+
+.rating > input{
+	display: none;
+}
+
+.rating > label:before{
+	content: '\f005';
+	font-family: FontAwesome;
+	margin: 5px;
+	font-size: 1.5rem;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.rating > .half:before{
+	content: '\f089';
+	position: absolute;
+	cursor: pointer;
+}
+
+
+.rating > label{
+	color: #ddd;
+	float: right;
+	cursor: pointer;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label{
+	color: #e8f80c;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{
+	color: #87e6f7;
+}
+
+
+
+
+
+
+
+:root {
+    --color-primary: #44d4fd;
+    --color-label: #a7a7a7;
+    --color-text: #e2dede;
+    --font-family: "Montserrat";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    padding: 30px;
+    border-radius: 24px;
+}
+
+.card h2 {
+    color: #D9DCD6;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin: 0 0 2px;
+}
+
+.card p {
+    color: var(--color-text);
+    font-size: 14px;
+    margin: 0 0 16px;
+}
+
+.card .pulse {
+    position: absolute;
+    top: 52px;
+    right: 40px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.card .pulse::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .1px solid var(--color-primary);
+    animation: pulse 3s linear infinite;
+    transform-origin: center;
+    opacity: .8;
+    scale: 0;
+}
+
+@keyframes pulse {
+
+    70% {
+        scale: 0;
+        opacity: .8;
+    }
+
+    100% {
+        scale: 3;
+        opacity: 0;
+    }
+
+}
+
+.card .area-chart {
+    position: relative;
+}
+
+.card .area-chart .grid {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0% 3%,
+        #D9DCD6 3% 3.5%,
+        transparent 3% 18.65%
+    );
+}
+
+.card .area-chart .grid::after {
+    content: '';
+    position: inherit;
+    z-index: 1;
+    top: inherit;
+    bottom: inherit;
+    width: inherit;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(27, 27, 27, 1),
+        rgba(27, 27, 27, .9),
+        rgba(27, 27, 27, 1)
+    );
+}
+
+body .apexcharts-tooltip.apexcharts-theme-light {
+    color: var(--color-text);
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: none;
+    padding: 8px 6px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border: 0;
+}
+
+.apexcharts-tooltip-title,
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-light {
+    display: none;
+}
+
+#footer2 {
+    width: 100%;
+    height: 80px;
+    background-color: #051923;
+    color: #D9DCD6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 40px;
+  }
+
+  .card3 {
+    width: 30%;
+   
+    color: #D9DCD6;
+    background-color: #051923;
+    border-radius: 30px;
+
+    margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; /* Adjust the value as needed */
+  margin-top: 70px; /* Adjust the value as needed */
+    
+  }
+
+  .card3 h2 {
+    font-size: 30px;
+    padding-top: 2px;
+    font-family: 'Roboto Slab';
+  }
+  .card3 h2:last-child {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #214E64;
+    color: #D9DCD6;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+  
+  /* Adjusting the form alignment */
+  .card3 form {
+    margin-left: 100px;
+  }
+  input[type="time"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #D9DCD6;
+  }
+ 
+  .button {
+    color: #D9DCD6;
+    ;
+    background-color: #79b1c2;
+    border-radius: 15px;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    font-family: 'Roboto Slab';
+}
+
+
+
+
+
+
+
+
+  
+  	
+  
